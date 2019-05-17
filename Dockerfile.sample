@@ -1,0 +1,7 @@
+# 使用基础镜像可以提高每次修改配置文件后构建的速度
+
+FROM ccr.ccs.tencentyun.com/qiash/td-agent:base
+
+MAINTAINER Qihongchuan <qihongchuan@vchangyi.com>
+
+COPY td-agent.conf /etc/td-agent/td-agent.conf
